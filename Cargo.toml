@@ -1,0 +1,7 @@
+[package]
+name = "gdbwire-sys"
+version = "0.1.0"
+authors = ["Antti Keränen <detegr@gmail.com>"]
+build = "build.rs"
+
+[dependencies]

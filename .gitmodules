@@ -1,0 +1,3 @@
+[submodule "gdbwire"]
+	path = gdbwire
+	url = https://github.com/brasko/gdbwire
