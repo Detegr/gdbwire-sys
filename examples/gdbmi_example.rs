@@ -1,4 +1,11 @@
-/* The same example that gdbwire has, with Rust FFI bindings */
+// Copyright (c) 2015 gdbwire_sys developers
+// Licensed under the Apache License, Version 2.0
+// <LICENSE-APACHE or
+// http://www.apache.org/licenses/LICENSE-2.0> or the MIT
+// license <LICENSE-MIT or http://opensource.org/licenses/MIT>,
+// at your option. All files in the project carrying such
+// notice may not be copied, modified, or distributed except
+// according to those terms.
 
 extern crate gdbwire_sys;
 
@@ -33,7 +40,8 @@ unsafe fn main_loop(parser: *mut gdbwire_sys::gdbmi_parser) {
     }
 }
 
-unsafe extern "C" fn parser_callback(context: *mut raw::c_void, output: *mut gdbwire_sys::gdbmi_output) {
+unsafe extern "C" fn parser_callback(context: *mut raw::c_void,
+                                     output: *mut gdbwire_sys::gdbmi_output) {
     assert!(context.is_null());
     assert!(!output.is_null());
 
