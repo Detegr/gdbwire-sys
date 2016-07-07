@@ -71,7 +71,7 @@ impl Union_Unnamed1 {
         let raw: *mut u8 = ::std::mem::transmute(&self._bindgen_data_);
         ::std::mem::transmute(raw.offset(0))
     }
-    pub unsafe fn error(&mut self) -> *mut Struct_Unnamed2 {
+    pub unsafe fn error(&mut self) -> *mut gdbmi_error_variant {
         let raw: *mut u8 = ::std::mem::transmute(&self._bindgen_data_);
         ::std::mem::transmute(raw.offset(0))
     }
@@ -84,11 +84,11 @@ impl ::std::default::Default for Union_Unnamed1 {
 #[repr(C)]
 #[derive(Copy, Clone)]
 #[derive(Debug)]
-pub struct Struct_Unnamed2 {
+pub struct gdbmi_error_variant {
     pub token: *mut ::std::os::raw::c_char,
     pub pos: gdbmi_position,
 }
-impl ::std::default::Default for Struct_Unnamed2 {
+impl ::std::default::Default for gdbmi_error_variant {
     fn default() -> Self {
         unsafe { ::std::mem::zeroed() }
     }
