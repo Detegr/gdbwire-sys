@@ -1,3 +1,6 @@
 [submodule "gdbwire"]
 	path = gdbwire
 	url = https://github.com/brasko/gdbwire
+[submodule "gdbwire_nitori"]
+	path = gdbwire
+	url = https://github.com/Nitori-/gdbwire
